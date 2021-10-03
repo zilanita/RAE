@@ -1,0 +1,54 @@
+import time
+from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from selenium.webdriver.support.select import Select
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
+import linecache
+import os.path
+#puede que varios de estos import sobren.
+
+browser = webdriver.Chrome(executable_path=r"./chromedriver.exe")	#insertar correctamente path a chromedriver.exe
+time.sleep(6)
+browser.get("https://dle.rae.es/")
+
+readfile= #path a su lista de palabras en formato .txt
+writefile=#path a su lista de definiciones a escribir en formato.txt
+
+w=open(writefile,"a",encoding="utf-8")
+r=open(readfile,"r")
+
+word="temp"
+j=1
+while(word):
+    word=linecache.getline(readfile,j)
+    browser.find_element_by_id("wq").send_keys(word)
+    browser.find_element_by_class_name("button").send_keys(Keys.ENTER)
+    time.sleep(5)   #modificable.
+    
+    try:
+        WebDriverWait(browser,10).until(EC.presence_of_element_located((By.CLASS_NAME,'f')))	#en caso de que una definición lleve a una página no deseada en donde hay que escoger opciones.
+    except TimeoutException:
+        j=j+1
+        word=linecache.getline(readfile,j)
+        browser.find_element_by_id("wq").send_keys(word)
+        browser.find_element_by_class_name("button").send_keys(Keys.ENTER)
+        time.sleep(5)   #modificable.;
+        
+    df=browser.find_elements_by_class_name("j")
+    w.write("{\""+word[:-1])
+    l=len(df)
+    j=j+1
+    i=0
+    while(i<l):
+        w.write("\",\""+df[i].text)
+        i=i+1
+    w.write("\"},\n")
+r.close()
+w.close()
