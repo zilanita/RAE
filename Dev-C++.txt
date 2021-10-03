@@ -1,0 +1,19 @@
+// Ejemplo de como se vería en Dev-C++
+
+#include<stdio.h>
+#define DEF 62
+#define SPACE 698
+char palabra[][DEF+2][SPACE+1]={
+/*...*/
+{"aba","1. interj. desus. cuidado."},
+{"abaá","1. m. Guin. Casa comunal."},
+{"ababillarse","1. prnl. rur. Chile. Dicho de un animal: Enfermar de la babilla."},
+{"ababol","1. m. Esp. orient. amapola.","2. m. Ar. y Nav. Persona distraída, simple, abobada."},
+{"abacá","1. m. Planta de la familia de las musáceas, de unos tres metros de altura, originaria de Filipinas, y de cuyo tronco se saca un filamento textil.","2. m. Filamento de abacá preparado para la industria.","3. m. Tejido hecho con filamento de abacá."},
+{"abacal","1. m. Filip. Terreno donde se cultiva abacá."},
+{"abacalera","1. adj. Filip. Perteneciente o relativo al abacá o al abacal."},
+/*...*/
+NULL,
+};
+
+// Note que la palabra en sí va en la primera dirección, mientras que las definiciones van en lo que sigue.
