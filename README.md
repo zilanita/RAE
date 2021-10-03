@@ -4,7 +4,9 @@ Las palabras se extrajeron del trabajo de: https://github.com/JorgeDuenasLerin/d
 Puede llegar y tomar los .txt y usarlos puesto que ya están pulidos. Si quiere saber sobre el método de extracción lea lo que sigue.
 
 Extraídos con Selenium-Python.
+
 El código está en Python_Selenium_code.txt y usa Google Chrome.
+
 Para usarlo debe ingresar este código en Python (luego de hacer los enlaces con Selenium) y hacer las modificaciones del código de forma que usted cree dos .txt:
   - Uno que contenga las palabras que desea buscar en la RAE (separadas por un salto de línea).
   - Otro en el cual se registrarán las definiciones en formato lista C++.
