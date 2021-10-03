@@ -7,24 +7,8 @@ Extraídos con Selenium-Python.
 El código está en Python_Selenium_code.txt y usa Google Chrome.
 Para usarlo debe ingresar este código en Python (luego de hacer los enlaces con Selenium) y hacer las modificaciones del código de forma que usted cree dos .txt:
   - Uno que contenga las palabras que desea buscar en la RAE.
-  - Otro en el cual se registrarán las definiciones en formato lista C++.
-En Dev-C++ se vería algo así:
+  - Otro en el cual se registrarán las definiciones en formato lista C++ (ver descripción adicional).
 
-#include<stdio.h>
-#define DEF 62
-#define SPACE 698
-char palabra[][DEF+2][SPACE+1]={
-  /*...*/
-  {"ababillarse","1. prnl. rur. Chile. Dicho de un animal: Enfermar de la babilla."},
-  {"ababol","1. m. Esp. orient. amapola.","2. m. Ar. y Nav. Persona distraída, simple, abobada."},
-  {"abacá","1. m. Planta de la familia de las musáceas, de unos tres metros de altura, originaria de Filipinas, y de cuyo tronco se saca un filamento textil."}
-  {"abacal","1. m. Filip. Terreno donde se cultiva abacá."},
-  {"abacalera","1. adj. Filip. Perteneciente o relativo al abacá o al abacal."},
-  /*...*/
-  NULL,
-  };
-
-Note que la palabra en sí va en la primera direccion, mientras que las definiciones van en las siguientes.
 
 Pros del código en Python:
   - Fácil de entender pues solo usa ciertos aspectos básicos de Python y Selenium.
