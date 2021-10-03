@@ -12,6 +12,7 @@ Para usarlo debe ingresar este código en Python (luego de hacer los enlaces con
 
 Pros del código en Python:
   - Fácil de entender pues solo usa ciertos aspectos básicos de Python y Selenium.
+
 Contras:
   - Demasiado lento, tarda días en registrar todas las palabras.
   - Se salta palabras.
