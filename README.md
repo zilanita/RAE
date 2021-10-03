@@ -26,3 +26,5 @@ Contras:
           ecuación
         Deben corregirse manualmente antes de introducir el listado en el sketch de Dev-C++
         Sin embargo, esto ya está corregido en los archivos de texto incluidos en el repositorio.
+
+Pese a esto, lo subí puesto que nadie (al parecer) lo había hecho de manera expedita en .txt. Ojalá que a alguien le sirva ;)
