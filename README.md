@@ -7,7 +7,7 @@ Extraídos con Selenium-Python.
 El código está en Python_Selenium_code.txt y usa Google Chrome.
 Para usarlo debe ingresar este código en Python (luego de hacer los enlaces con Selenium) y hacer las modificaciones del código de forma que usted cree dos .txt:
   - Uno que contenga las palabras que desea buscar en la RAE (separadas por un salto de línea).
-  - Otro en el cual se registrarán las definiciones en formato lista C++ (ver descripción adicional).
+  - Otro en el cual se registrarán las definiciones en formato lista C++.
 
 
 Pros del código en Python:
