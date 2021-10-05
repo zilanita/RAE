@@ -23,6 +23,7 @@ Contras:
   - Se interrumpe sin motivo aparente.
   - Si se interrumpe puede generar errores en el texto.
   - No distingue las comillas dentro de una definición, por lo que las palabras:
+  
           - dilogía
           - bajo
           - clicar
