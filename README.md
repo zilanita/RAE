@@ -23,10 +23,12 @@ Contras:
   - Se interrumpe sin motivo aparente.
   - Si se interrumpe puede generar errores en el texto.
   - No distingue las comillas dentro de una definición, por lo que las palabras:
-          dilogía
-          bajo
-          clicar
-          ecuación
+          - dilogía
+          - bajo
+          - clicar
+          - ecuación
+
+
         Deben corregirse manualmente antes de introducir el listado en el sketch de Dev-C++
         Sin embargo, esto ya está corregido en los archivos de texto incluidos en el repositorio.
 
